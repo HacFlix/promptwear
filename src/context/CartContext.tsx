@@ -52,7 +52,7 @@ const CartContextProvider = ({ children }: { children: React.ReactNode }) => {
     setCart(items);
   }
   function removeProduct(id: number) {
-    const items = cart.filter((item) => item.id === id);
+    const items = cart.filter((item) => item.id !== id);
     setCart(items);
   }
 
